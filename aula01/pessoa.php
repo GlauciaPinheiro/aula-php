@@ -11,6 +11,7 @@
          }  
          function __set($variavel, $valor){
               $this->$variavel = $valor; 
+         }
     }
     
       $pessoa = new Pessoa("Roberto");
@@ -18,6 +19,6 @@
       echo $pessoa->__get('nome');
       $pessoa->__set('idade',22);
       echo"<br>";
-      echo $pessoa->get('idade');
+      echo $pessoa->__get('idade');
 
       ?>
